@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>My forms </title>
+   <script>
+    function calc(){
+      //alert("It is working");
+      var dob = document.getElementById("age").value;
+      var cuy = document.getElementById("year").value;
+      var age = cuy-dob;
+      alert("My amazing age is:"+age);
+    }
+     
+      </script>
+</head>
+  <body bgcolor="ff99ee">
+    
+    <form>
+   DOB <input type="text" id="age" name="age" class="calc"/>
+  CY:  <input type="year" id="year" name="year" class="calc"/>
+    <input type="submit"  value="calculate Age" onclick="calc()"/>
+
+  </form>
+</body>
+</html>
